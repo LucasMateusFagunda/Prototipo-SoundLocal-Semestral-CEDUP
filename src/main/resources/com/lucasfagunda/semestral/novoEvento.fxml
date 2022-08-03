@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="656.0" prefWidth="793.0" style="-fx-background-color: #e4e3ff; -fx-border-color: #000000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lucasfagunda.semestral.NovoEventoController">
+   <children>
+      <BorderPane prefHeight="648.0" prefWidth="192.0" style="-fx-background-color: #bc96ff; -fx-border-color: #000000;">
+         <top>
+            <ImageView fitHeight="653.0" fitWidth="191.0" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@roxo%20degrade%20(3).jpg" />
+               </image>
+            </ImageView>
+         </top></BorderPane>
+      <Label layoutX="333.0" layoutY="23.0" text="Nome do Evento">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="331.0" layoutY="94.0" text="Gênero do Evento">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="330.0" layoutY="174.0" text="Descrição do Evento">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="333.0" layoutY="291.0" text="Data do Evento Inicio">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="330.0" layoutY="448.0" text="Hora do Evento Inicio">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Label>
+      <TextField fx:id="nomeEventoTextField" layoutX="329.0" layoutY="52.0" prefHeight="34.0" prefWidth="186.0" promptText="Nome" style="-fx-border-color: #000000;" />
+      <TextField fx:id="generoEventoTextField" layoutX="333.0" layoutY="126.0" prefHeight="34.0" prefWidth="186.0" promptText="Genero" style="-fx-border-color: #000000;" />
+      <TextArea fx:id="descricaoEventoTextArea" layoutX="329.0" layoutY="201.0" prefHeight="82.0" prefWidth="192.0" promptText="Descricao" style="-fx-border-color: #000000;" text="&#10;" wrapText="true" />
+      <TextField fx:id="horaEventoInicioTextField" layoutX="330.0" layoutY="480.0" prefHeight="34.0" prefWidth="192.0" promptText="00:00" style="-fx-border-color: #000000;" />
+      <Button layoutX="639.0" layoutY="302.0" mnemonicParsing="false" onAction="#salvar" prefHeight="60.0" prefWidth="120.0" style="-fx-border-color: #000000; -fx-background-color: #870fd7;" text="Salvar" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Button>
+      <Button layoutX="639.0" layoutY="377.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="60.0" prefWidth="120.0" style="-fx-border-color: #000000; -fx-background-color: #870fd7;" text="Cancelar" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Button>
+      <Label layoutX="334.0" layoutY="523.0" prefHeight="21.0" prefWidth="172.0" text="Hora do Evento Fim">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Label>
+      <TextField fx:id="horaEventoFimTextField" layoutX="330.0" layoutY="556.0" prefHeight="34.0" prefWidth="192.0" promptText="00:00" style="-fx-border-color: #000000;" />
+      <TextField fx:id="dataEventoInicioTextField" layoutX="332.0" layoutY="323.0" prefHeight="34.0" prefWidth="192.0" promptText=" /  /" style="-fx-border-color: #000000;" />
+      <Label layoutX="330.0" layoutY="366.0" prefHeight="21.0" prefWidth="186.0" text="Data do Evento Fim">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Label>
+      <TextField fx:id="dataEventoFimTextField" layoutX="330.0" layoutY="399.0" prefHeight="34.0" prefWidth="192.0" promptText=" /  /" style="-fx-border-color: #000000;" />
+      <ImageView fitHeight="113.0" fitWidth="90.0" layoutX="36.0" layoutY="3.0">
+         <image>
+            <Image url="@Captura%20de%20tela%202022-07-03%20152903%20(1).png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="14.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SOUNDLOCAL" wrappingWidth="143.0">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

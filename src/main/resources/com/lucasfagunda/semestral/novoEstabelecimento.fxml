@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="mainAnchorPane" prefHeight="656.0" prefWidth="793.0" style="-fx-background-color: #e4e3ff; -fx-border-color: #bc96ff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lucasfagunda.semestral.NovoEstabelecimentoController">
+   <children>
+      <AnchorPane layoutY="-4.0" prefHeight="669.0" prefWidth="148.0" style="-fx-background-color: #bc96ff; -fx-border-color: #000000;">
+         <children>
+            <ImageView fitHeight="667.0" fitWidth="179.0">
+               <image>
+                  <Image url="@roxo%20degrade%20(3).jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="112.0" fitWidth="93.0" layoutX="34.0" layoutY="14.0">
+               <image>
+                  <Image url="@Captura%20de%20tela%202022-07-03%20152903%20(1).png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="18.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SOUNDLOCAL" wrappingWidth="143.0">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+            </Text>
+            <Button layoutX="23.0" layoutY="573.0" mnemonicParsing="false" onAction="#voltar" prefHeight="65.0" prefWidth="111.0" style="-fx-background-color: #870fd7; -fx-border-color: #000000;" text="Voltar" textFill="#fffffffc">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <Label layoutX="191.0" layoutY="180.0" text="Email">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="188.0" layoutY="246.0" text="Senha">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="191.0" layoutY="319.0" text="Endereço">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="191.0" layoutY="391.0" text="Hora de Abertura">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="191.0" layoutY="465.0" text="Hora de Fechamento">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="543.0" layoutY="103.0" text="Distancia">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="544.0" layoutY="180.0" text="Genero Musical">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="549.0" layoutY="246.0" text="CNPJ">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="546.0" layoutY="319.0" text="Telefone">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="548.0" layoutY="391.0" text="Preco">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Label>
+      <TextField fx:id="nomeTextField" layoutX="188.0" layoutY="144.0" prefHeight="27.0" prefWidth="220.0" promptText="Nome" style="-fx-border-color: #000000;" />
+      <TextField fx:id="emailTextField" layoutX="188.0" layoutY="206.0" prefHeight="27.0" prefWidth="220.0" promptText="Email" style="-fx-border-color: #000000;" />
+      <TextField fx:id="enderecoTextField" layoutX="188.0" layoutY="352.0" prefHeight="27.0" prefWidth="220.0" promptText="Endereço" style="-fx-border-color: #000000;" />
+      <TextField fx:id="horaAberturaTextField" layoutX="188.0" layoutY="419.0" prefHeight="27.0" prefWidth="220.0" promptText="00:00" style="-fx-border-color: #000000;" />
+      <TextField fx:id="horaFechamentoTextField" layoutX="187.0" layoutY="500.0" prefHeight="27.0" prefWidth="220.0" promptText="00:00" style="-fx-border-color: #000000;" />
+      <TextField fx:id="distanciaTextField" layoutX="543.0" layoutY="144.0" prefHeight="27.0" prefWidth="213.0" promptText="Distancia" style="-fx-border-color: #000000;" />
+      <TextField fx:id="generoMusicalTextField" layoutX="543.0" layoutY="206.0" prefHeight="27.0" prefWidth="213.0" promptText="Genero musical" style="-fx-border-color: #000000;" />
+      <TextField fx:id="cnpjTextField" layoutX="543.0" layoutY="279.0" prefHeight="27.0" prefWidth="213.0" promptText="CNPJ" style="-fx-border-color: #000000;" />
+      <TextField fx:id="telefoneTextField" layoutX="543.0" layoutY="352.0" prefHeight="27.0" prefWidth="213.0" promptText="(  )" style="-fx-border-color: #000000;" />
+      <TextField fx:id="precoTextField" layoutX="546.0" layoutY="419.0" prefHeight="27.0" prefWidth="213.0" promptText="Preço" style="-fx-border-color: #000000;" />
+      <Button layoutX="645.0" layoutY="577.0" mnemonicParsing="false" onAction="#salvar" prefHeight="65.0" prefWidth="111.0" style="-fx-background-color: #870fd7; -fx-border-color: #000000;" text="Salvar" textFill="#fffffffa">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Button>
+      <Text fill="#282323" focusTraversable="true" layoutX="199.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de Estabelecimentos" textAlignment="JUSTIFY" wrappingWidth="614.87109375">
+         <font>
+            <Font name="Arial Bold" size="41.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="55.0" fitWidth="80.0" layoutX="-1.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" />
+      <Line endX="486.0" layoutX="307.0" layoutY="76.0" startX="-100.0" />
+      <Label layoutX="548.0" layoutY="465.0" text="Tipo de Local">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="senhaPasswordField" layoutX="188.0" layoutY="279.0" prefHeight="27.0" prefWidth="220.0" promptText="Senha" style="-fx-border-color: #000000;" />
+      <TextField fx:id="tipoLocalTextField" layoutX="546.0" layoutY="500.0" prefHeight="27.0" prefWidth="213.0" promptText="Tipo de Local" style="-fx-border-color: #000000;" />
+      <Label layoutX="191.0" layoutY="103.0" text="Nome do Estabelecimento">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
